@@ -9,29 +9,25 @@
 <body>
   <div class="min-h-screen text-white bg-black">
     <!-- 🎥 R34 Hero Video Section -->
-    <section id="home" class="relative h-screen flex items-center justify-center">
-      <div class="absolute inset-0 overflow-hidden">
-        <video id="hero-video" autoplay loop muted playsinline class="w-full h-full object-cover">
-          <source src="./components/r342.mp4" type="video/mp4">
+    <section id="home" class="hero-section">
+      <div class="video-container">
+        <video id="hero-video" autoplay loop muted playsinline>
+          <source src="/r342.mp4" type="video/mp4">
         </video>
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="overlay"></div>
       </div>
-      <div class="relative z-10 text-center">
-        <h2 class="text-4xl font-semibold text-blue-400">The Legend Lives On</h2>
-        <p class="mt-4 text-lg text-gray-300 max-w-2xl">
-          Brian O’Conner’s Nissan Skyline GT-R R34—The Ultimate Street Machine.
-        </p>
+      <div class="text-container">
+        <h2 class="heading">The Legend Lives On</h2>
+        <p class="subheading">Brian O’Conner’s Nissan Skyline GT-R R34—The Ultimate Street Machine.</p>
       </div>
     </section>
 
     <!-- 🔹 Fast & Furious Navbar -->
-    <header id="navbar" class="w-full bg-black bg-opacity-90 shadow-md z-50 py-4 transition-all duration-300">
-      <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
-        <h1 class="text-2xl font-bold uppercase tracking-wide text-blue-500">
-          Fast & Furious | R34 GT-R
-        </h1>
+    <header id="navbar" class="navbar">
+      <div class="navbar-container">
+        <h1 class="logo">Fast & Furious | R34 GT-R</h1>
         <nav>
-          <ul class="flex space-x-6">
+          <ul class="nav-links">
             <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#stats" class="nav-link">Stats</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -41,29 +37,27 @@
     </header>
 
     <!-- 🚗 Car Specifications Section -->
-    <section id="car-model" class="w-full h-screen bg-gray-900">
+    <section id="car-model" class="car-model">
       <!-- Car Model will go here -->
     </section>
 
     <!-- 🚗 Car Specifications Section -->
-    <section id="stats" class="max-w-3xl mx-auto px-6 py-16">
-      <h2 class="text-center text-2xl font-bold text-blue-400 mb-6">Car Specs</h2>
-      <div class="space-y-6">
-        <div id="specs-container"></div>
-      </div>
+    <section id="stats" class="stats-section">
+      <h2 class="section-heading">Car Specs</h2>
+      <div id="specs-container" class="specs-container"></div>
     </section>
 
     <!-- 📞 Contact Section -->
-    <section id="contact" class="text-center py-10">
-      <h2 class="text-2xl font-bold text-blue-400">Join the Crew</h2>
-      <p class="text-gray-300 mt-2">
-        Want to race? Hit us up at <a href="mailto:race@fastfurious.com" class="text-blue-400 underline">race@fastfurious.com</a>
+    <section id="contact" class="contact-section">
+      <h2 class="section-heading">Join the Crew</h2>
+      <p class="contact-text">
+        Want to race? Hit us up at <a href="mailto:race@fastfurious.com" class="contact-link">race@fastfurious.com</a>
       </p>
     </section>
 
     <!-- ⚡ Footer -->
-    <footer class="w-full bg-gray-900 text-center py-4">
-      <p class="text-sm text-gray-400">&copy; 2025 Fast & Furious R34 Tribute</p>
+    <footer class="footer">
+      <p class="footer-text">&copy; 2025 Fast & Furious R34 Tribute</p>
     </footer>
 
   </div>
