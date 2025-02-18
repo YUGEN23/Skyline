@@ -11,8 +11,8 @@
     <!-- 🎥 R34 Hero Video Section -->
     <section id="home" class="hero-section">
       <div class="video-container">
-        <video id="hero-video" autoplay loop muted playsinline>
-          <source src="/r342.mp4" type="video/mp4">
+        <video autoplay loop muted plays-inline class="background-clip">
+          <source src="components/r34.mp4" type="video/mp4">
         </video>
         <div class="overlay"></div>
       </div>
@@ -29,8 +29,8 @@
         <nav>
           <ul class="nav-links">
             <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#stats" class="nav-link">Stats</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#stats" class="nav-link">Car Specs</a></li>
+            <li><a href="#contact" class="nav-link">Join the Crew</a></li>
           </ul>
         </nav>
       </div>
@@ -38,28 +38,31 @@
 
     <!-- 🚗 Car Specifications Section -->
     <section id="car-model" class="car-model">
-      <!-- Car Model will go here -->
+      <div class="text-box">
+        <!-- Car Model will go here -->
+      </div>
     </section>
 
     <!-- 🚗 Car Specifications Section -->
     <section id="stats" class="stats-section">
-      <h2 class="section-heading">Car Specs</h2>
+      <h2 class="section-heading">Car Specifications</h2>
       <div id="specs-container" class="specs-container"></div>
     </section>
 
     <!-- 📞 Contact Section -->
     <section id="contact" class="contact-section">
       <h2 class="section-heading">Join the Crew</h2>
-      <p class="contact-text">
-        Want to race? Hit us up at <a href="mailto:race@fastfurious.com" class="contact-link">race@fastfurious.com</a>
-      </p>
+      <div class="text-box">
+        <p class="contact-text">
+          Want to race? Hit us up at <a href="mailto:race@fastfurious.com" class="contact-link">race@fastfurious.com</a>
+        </p>
+      </div>
     </section>
 
     <!-- ⚡ Footer -->
     <footer class="footer">
       <p class="footer-text">&copy; 2025 Fast & Furious R34 Tribute</p>
     </footer>
-
   </div>
 
   <script src="script.js"></script>

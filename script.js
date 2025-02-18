@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+
   // Add specifications to the "Stats" section
   const specs = [
     { title: "Engine", description: "RB26DETT 2.6L Twin-Turbo Inline-6, legendary for tuning potential." },
